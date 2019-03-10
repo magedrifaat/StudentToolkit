@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Solve Equations
+{% endblock %}
+{% block head %}
+    <script src="{{ url_for('static', filename='eqScript.js') }}"></script>
+{% endblock %}
+
+{% block main %}
+<div id="body">
+    <h2>Equation solver</h2>
+    <div class="form-group">
+        <input autocomplete="off" autofocus autocorrect="off" autocapitalize="off" spellcheck="false" class="form-control" id="equation" placeholder="Enter the equation." type="text"/>
+    </div>
+    <div class="form-group">
+        <button class="btn btn-default" id="solveBtn">Solve!</button>
+    </div>
+    <div id="resultHolder"></div>
+</div>
+<div id="footer">Powered by <a href="https://products.wolframalpha.com/api/">Wolfram|Alpha APIs</a></div>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Vocab Helper
+{% endblock %}
+{% block head %}
+    <script src="{{ url_for('static', filename='vocabScript.js') }}"></script>
+{% endblock %}
+
+{% block main %}
+<div id="body">
+    <h2>Vocab Helper</h2>
+    <div class="form-group">
+        <input autocomplete="off" autofocus class="form-control" id="word" placeholder="Enter word or phrase." type="text"/>
+    </div>
+    <div class="form-group">
+        <button class="btn btn-default" id="searchBtn">Search</button>
+    </div>
+    <div id="vocabHolder" class="vocabtext"></div>
+</div>
+    <div id="footer">Powered by <a href="https://developer.oxforddictionaries.com/">Oxford Dictionaries API</a></div>
+{% endblock %}

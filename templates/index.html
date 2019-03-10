@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Student Toolkit
+{% endblock %}
+
+{% block main %}
+<h1>This is CS50's final project!</h1>
+<h3 style="text-align:left">This website aims at helping students by bringing together some of the tools found on the internet that students frequently use from <a href="/vocab">vocabulary searching</a> , <a href="/spell">spell</a> and <a href="/grammar">grammar</a> checking, to <a href="/eqsolver">solving equations</a> and <a href="/graph">graphing functions</a>. In addition to a page for some <a href="/sources">external sources for education</a> that I, as a student, find them really helpful.</h3><br>
+<h3>
+    <ul class="list-group" style="text-align:left;font-size:22px;"><b>APIs used in this project:</b>
+        <li class="list-group-item"><a href="https://azure.microsoft.com/en-us/services/cognitive-services/spell-check/">Bing spell check API</a> from <a href="https://azure.microsoft.com/en-us/">Microsoft Azure</a>.</li>
+        <li class="list-group-item"><a href="http://wiki.languagetool.org/public-http-api/">Grammar API</a> from <a href="https://languagetool.org/">Language Tool</a>.</li>
+        <li class="list-group-item"><a href="https://developer.oxforddictionaries.com/">Dictionary API</a> from <a href="https://www.oxforddictionaries.com/">Oxford Dictionaries</a>.</li>
+        <li class="list-group-item"><a href="https://products.wolframalpha.com/api/documentation/">Full results API</a> from <a href="https://www.wolframalpha.com/">Wolfram|Alpha</a>.</li>
+    </ul>
+</h3>
+<h3>
+    <ul class="list-group" style="text-align:left;font-size:22px;"><b>Technologies used in this project:</b>
+        <li class="list-group-item">HTML, CSS for front-end designing.</li>
+        <li class="list-group-item">JavaScript with JQuery for front-end development.</li>
+        <li class="list-group-item">Python with Flask microframework for back-end development.</li>
+    </ul>
+</h3>
+{% endblock %}

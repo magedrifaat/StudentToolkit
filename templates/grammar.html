@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Grammar checker
+{% endblock %}
+{% block head %}
+    <script src="{{ url_for('static', filename='grammarScript.js') }}"></script>
+{% endblock %}
+
+{% block main %}
+<div id="body">
+    <h2>Grammar Checker</h2>
+    <div class="textarea">
+        <textarea id="inTxt" class="form-control" size="100%" name="textin" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" rows="5" placeholder="Enter your text here."></textarea>
+    </div>
+    <div>
+        <button id="grammarBtn" class="form-control" name="check">Check!</button>
+    </div>
+    <div class="textarea" id="outTxt"><span style="color: gray">The Results will show here!</span>
+    </div>
+</div>
+<div id="footer">Powered by <a href="https://languagetool.org/">Language Tool</a></div>
+{% endblock %}
